@@ -1,0 +1,19 @@
+<h1 mat-dialog-title>
+  {{ "ganttChart" | translate }}
+  <object class="dot-green" matTooltip="{{ 'green' | translate }}"></object>
+  <object class="dot-light-grey" matTooltip="{{ 'grey' | translate }}"></object>
+  <object class="dot-yellow" matTooltip="{{ 'yellow' | translate }}"></object>
+  <object class="dot-orange" matTooltip="{{ 'orange' | translate }}"></object>
+  <object class="dot-red" matTooltip="{{ 'red' | translate }}"></object>
+  <object class="dot-white" matTooltip="{{ 'white' | translate }}"></object>
+</h1>
+<script src="https://code.highcharts.com/gantt/highcharts-gantt.js"></script>
+<div id="container"></div>
+
+<div mat-dialog-actions fxLayout="row">
+  <div fxFlex fxLayoutAlign="end" fxLayoutGap="10px">
+    <button mat-flat-button color="warn" (click)="onNoClick()" mat-dialog-close>
+      {{ "close" | translate }}
+    </button>
+  </div>
+</div>
